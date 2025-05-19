@@ -4,7 +4,7 @@ namespace UnityEssentials
 {
     public static class PlayerLoopHook
     {
-        public static void AddToPlayerLoop<T>(PlayerLoopSystem.UpdateFunction updateDelegate) where T : struct
+        public static void Add<T>(PlayerLoopSystem.UpdateFunction updateDelegate) where T : struct
         {
             var loop = PlayerLoop.GetCurrentPlayerLoop();
 
@@ -20,7 +20,7 @@ namespace UnityEssentials
             PlayerLoop.SetPlayerLoop(loop);
         }
 
-        public static void RemoveFromPlayerLoop<T>(PlayerLoopSystem.UpdateFunction updateDelegate) where T : struct
+        public static void Remove<T>(PlayerLoopSystem.UpdateFunction updateDelegate) where T : struct
         {
             var loop = PlayerLoop.GetCurrentPlayerLoop();
 
