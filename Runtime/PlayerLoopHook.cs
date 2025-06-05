@@ -13,7 +13,6 @@ namespace UnityEssentials
         public static void Add<T>(PlayerLoopSystem.UpdateFunction updateDelegate) where T : struct
         {
             var loop = PlayerLoop.GetCurrentPlayerLoop();
-
             for (int i = 0; i < loop.subSystemList.Length; i++)
                 if (loop.subSystemList[i].type == typeof(T))
                 {
@@ -29,7 +28,6 @@ namespace UnityEssentials
         public static void Remove<T>(PlayerLoopSystem.UpdateFunction updateDelegate) where T : struct
         {
             var loop = PlayerLoop.GetCurrentPlayerLoop();
-
             for (int i = 0; i < loop.subSystemList.Length; i++)
                 if (loop.subSystemList[i].type == typeof(T))
                 {
