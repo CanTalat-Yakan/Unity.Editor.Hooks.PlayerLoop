@@ -1,5 +1,5 @@
 {
-    "name": "UnityEssentials.PlayerLoopHook",
+    "name": "UnityEssentials.Editor.Hooks.PlayerLoop",
     "rootNamespace": "UnityEssentials",
     "references": [],
     "includePlatforms": [],
